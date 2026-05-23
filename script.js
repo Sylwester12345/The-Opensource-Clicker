@@ -1,6 +1,7 @@
 let clicks = 0
 let if2xbought = false
 let ifeverysecbought = false
+let cursors = 0
 
 document.getElementById("clicknotification").style.visibility = "hidden"
 function ClickFunction(){
@@ -40,26 +41,31 @@ function Shop2XClick(){
         if2xbought = true
         document.getElementById("DOUBLECLICK").textContent = "Bought!"
 
-    }
-    else if(clicks < 500){
+    }  else if(if2xbought = true){
         setTimeout(() => {
-              document.getElementById("DOUBLECLICK").textContent = "2X CLICK - 500 CLICKS"
-        }, 2000)
-        document.getElementById("DOUBLECLICK").textContent = "You dont have enough money"
-        
-    }
-    else if(if2xbought = true){
-        setTimeout(() => {
-              document.getElementById("DOUBLECLICK").textContent = "2X CLICK - 500 CLICKS"
+              document.getElementById("DOUBLECLICK").textContent = "2 Times Clicks - 200 Clicks"
         }, 2000)
         document.getElementById("DOUBLECLICK").textContent = "You arleady bought it"
         
     }
 
+
+
+    else if(clicks < 500){
+        setTimeout(() => {
+              document.getElementById("DOUBLECLICK").textContent = "2 Times Clicks - 200 Clicks"
+        }, 2000)
+        document.getElementById("DOUBLECLICK").textContent = "You dont have enough money"
+        
+    }
+    
+
 }
 
 function PointEverySecound() {
-    clicks += 1
+    let howmanyclicksgenerates = cursors * 1
+    clicks += howmanyclicksgenerates
+
     document.getElementById("MainLabel").textContent = "Clicks: " + clicks
     setTimeout(() => {
         PointEverySecound()
@@ -67,26 +73,36 @@ function PointEverySecound() {
 }
 
 
-function ShopPointEverySecound(){
-    if (clicks >= 200 && ifeverysecbought == false){
-        clicks -= 200
-        ifeverysecbought = true
-        document.getElementById("EVERYSECOUND").textContent = "Bought!"
-        document.getElementById("MainLabel").textContent = "Clicks: " + clicks
-        PointEverySecound()
+function ShopBuyACursor(){
+    if (clicks >= 50 ){
+        if (cursors >= 1){
+            clicks -= 50
+            cursors += 1
+            document.getElementById("HowMuchCursors").textContent = "Cursors: " + cursors
+            document.getElementById("EVERYSECOUND").textContent = "Bought!"
+            
+            setTimeout(() => {
+                document.getElementById("EVERYSECOUND").textContent = "Buy A Cursor - 50 Clicks"
+            }, 2000)
+            document.getElementById("MainLabel").textContent = "Clicks: " + clicks
+            
+        } else {
+            clicks -= 50
+            cursors += 1
+            document.getElementById("HowMuchCursors").textContent = "Cursors: " + cursors
+            document.getElementById("EVERYSECOUND").textContent = "Bought!"
+            setTimeout(() => {
+                document.getElementById("EVERYSECOUND").textContent = "Buy A Cursor - 50 Clicks"
+            }, 2000)
+            document.getElementById("MainLabel").textContent = "Clicks: " + clicks
+            PointEverySecound()
+        }
     }
-    else if(clicks < 200){
+    else if(clicks < 50){
         setTimeout(() => {
-              document.getElementById("EVERYSECOUND").textContent = "CLICK EVERY SECOUND - 200 CLICKS"
+              document.getElementById("EVERYSECOUND").textContent = "Buy A Cursor - 50 Clicks"
         }, 2000)
         document.getElementById("EVERYSECOUND").textContent = "You dont have enough money"
-        
-    }
-    else if(if2xbought = true){
-        setTimeout(() => {
-              document.getElementById("EVERYSECOUND").textContent = "CLICK EVERY SECOUND - 200 CLICKS"
-        }, 2000)
-        document.getElementById("EVERYSECOUND").textContent = "You arleady bought it"
         
     }
 

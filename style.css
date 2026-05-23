@@ -1,5 +1,31 @@
+
+
 body{
     background-color: black;
+}
+
+#STATSName{
+    font-size: 50px;
+    position: absolute;
+    left: 10%;
+    top: -5%;
+}
+
+#HowMuchCursors{
+    font-size: 30px;
+    position: absolute;
+    left: 10%;
+    top: 10%
+}
+
+#STATS {
+    position: absolute;
+    left: 85%;
+    top: 0%;
+    width: 230px;
+    height: 629px;
+
+    background-color: beige;
 }
 
 h2 {
@@ -11,7 +37,7 @@ h2 {
 }
 
 #MainClick{
-    background-color:  white;
+    background: linear-gradient(91deg,rgba(148, 30, 130, 1) 0%, rgba(105, 149, 132, 1) 100%, rgba(87, 199, 133, 1) 100%, rgba(184, 180, 132, 1) 100%);
     width: 200px;
     height: 100px;
     border-radius: 100px;
