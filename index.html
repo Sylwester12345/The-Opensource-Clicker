@@ -13,15 +13,23 @@
     <p id="clicknotification">Click!</p>
     <h2>The OpenSource Clicker</h2>
     <button onclick="ClickFunction()" id="MainClick">Click Me!</button>
-    <button onclick="Shop2XClick()" id="DOUBLECLICK">2 Times Clicks - 200 Clicks</button>
     <button onclick="ShopBuyACursor()" id="EVERYSECOUND">Buy A Cursor - 50 Clicks</button>
+    <button onclick="ShopBuyAFarm()" id="FARM">Buy A Farm - 200 Clicks</button>
+    <button onclick="SaveData()" id="SaveButton">Save</button>
+    <button onclick="DeleteData()" id="DeleteButton">Delete Data (CAUTIOUS)</button>
     <a href="helpandinformation.html"><button id="information">i</button></a>
-    <script src="script.js"></script>
+    
 
     <div id="STATS">
         <p id="STATSName">STATS</p>
         <p id="HowMuchCursors">Cursors: 0</p>
+        <p id="HowManyFarms">Farms: 0</p>
     </div>
     
+    <div id="Upgrades">
+        <p id="UpgradesName">Upgrades</p>
+        <button onclick="UpgradeCursors()" id="UpgradeCursors" >Upgrade Cursor – 1000 Clicks</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

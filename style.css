@@ -11,6 +11,13 @@ body{
     top: -5%;
 }
 
+#UPGRADESNAME{
+    font-size: 40px;
+    position: absolute;
+    left: 4%;
+    top: -3%;
+}
+
 #HowMuchCursors{
     font-size: 30px;
     position: absolute;
@@ -18,9 +25,26 @@ body{
     top: 10%
 }
 
+#HowManyFarms{
+    font-size: 30px;
+    position: absolute;
+    left: 10%;
+    top: 20%
+}
+
 #STATS {
     position: absolute;
     left: 85%;
+    top: 0%;
+    width: 230px;
+    height: 629px;
+
+    background-color: beige;
+}
+
+#UPGRADES {
+    position: absolute;
+    left: 0%;
     top: 0%;
     width: 230px;
     height: 629px;
@@ -52,12 +76,7 @@ h2 {
     font-size: 40px;
 }
 
-#Info{
-    color: white;
-    position: absolute;
-    left: 5;
-    top: 35%;
-}
+
 
 #MainLabel{
     color: white;
@@ -77,6 +96,49 @@ h2 {
     color: black;
 }
 
+#Upgrades{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 230px;
+    height: 629px;
+
+    background-color: beige;
+}
+
+#UpgradeCursors{
+    width: 70px;
+    height: 70px;
+    border-radius: 0px;
+    position: absolute;
+    left: 0%;
+    top: 15%;
+    color: black;
+    font-size: 10px;
+}
+
+#SaveButton{
+    width: 100px;
+    height: 40px;
+    border-radius: 0px;
+    position: absolute;
+    left: 16.9%;
+    top: 0%;
+    color: black;
+    font-size: 20px;
+}
+
+#DeleteButton{
+    width: 100px;
+    height: 40px;
+    border-radius: 0px;
+    position: absolute;
+    left: 25%;
+    top: 0%;
+    color: black;
+    font-size: 10px;
+}
+
 #Github{
     background-color:  white;
     width: 200px;
@@ -86,6 +148,39 @@ h2 {
     left: 40%;
     bottom: 0%;
     color: black;
+}
+
+
+
+#EVERYSECOUND{
+    background-color:  white;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    left: 32%;
+    bottom: 0%;
+    color: black;
+}
+
+
+#FARM{
+    background-color:  white;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    left: 47%;
+    bottom: 0%;
+    color: black;
+}
+
+#clicknotification{
+    color: white;
+    visibility: hidden;
+    position: absolute;
+    left: 45%;
+    top: 30%;
 }
 
 #information{
@@ -99,21 +194,9 @@ h2 {
     color: black;
 }
 
-#EVERYSECOUND{
-    background-color:  white;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+#UpgradesName {
+    font-size: 50px;
     position: absolute;
-    left: 32%;
-    bottom: 0%;
-    color: black;
-}
-
-#clicknotification{
-    color: white;
-    visibility: hidden;
-    position: absolute;
-    left: 45%;
-    top: 30%;
+    left: 7%;
+    top: -5%;
 }
